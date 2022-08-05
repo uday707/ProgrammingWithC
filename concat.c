@@ -6,6 +6,7 @@ void main() {
     char str1[80], str2[40];
     int i1, i2;
 
+
     printf("Input the first string: ");
     gets(str1);
 

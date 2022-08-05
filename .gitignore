@@ -1,0 +1,9 @@
+## Ignore
+.idea/
+.vscode/
+[A-Za-z]*
+
+## Allow
+!*.cpp
+!*.c
+!*.h

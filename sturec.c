@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void main () {
+int main () {
     
     struct record {
       char name[20];
@@ -54,4 +56,6 @@ void main () {
         printf ("%-20s %-10s ", student[i].name, student[i].regno);
         printf ("%10.2f     %d \n", student[i].avg, student[i].rank);
     }
+
+    return 0;
 }
