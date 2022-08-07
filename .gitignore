@@ -1,9 +1,10 @@
 ## Ignore
 .idea/
 .vscode/
-[A-Za-z]*
+[a-zA-Z0-9]*
 
 ## Allow
 !*.cpp
 !*.c
 !*.h
+!*/

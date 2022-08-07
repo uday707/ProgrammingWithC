@@ -12,3 +12,13 @@ void print(T a[], int n) {
   }
   cout << "]" << endl; 
 }
+
+
+template<class T>
+void print(T* mat, int row, int col) {
+   for (int i = 0; i < row; i++) {
+        for (int j =0; j < col; j++)
+           cout << " " << mat[i][j] << " ";
+         cout << endl;
+   }
+}
