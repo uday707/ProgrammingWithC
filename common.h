@@ -22,3 +22,11 @@ void print(T* mat, int row, int col) {
          cout << endl;
    }
 }
+
+// Utility method to swap two values
+template<class T>
+void swap(T* x, T* y) {
+   T temp = *x;
+   *x = *y;
+   *y = temp;
+}
