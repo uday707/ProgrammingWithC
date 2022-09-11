@@ -23,6 +23,19 @@ void print(T* mat, int row, int col) {
    }
 }
 
+// utility method to print the contents of vector
+template<class T> 
+void print(vector<T> &v) {
+   cout << "Vector: [";
+   for (int i =0; i < v.size(); i++) {
+      if (i < v.size() -1)
+         cout << v[i] << ", ";
+      else
+         cout << v[i];
+   }
+   cout << "]" << endl;
+        
+}
 // Utility method to swap two values
 template<class T>
 void swap(T* x, T* y) {
