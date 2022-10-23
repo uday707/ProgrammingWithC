@@ -1,5 +1,13 @@
 #include <iostream>
+#include <vector>
 using namespace std;
+
+/* Define a large enough value 
+   that value will be used for 
+   vertices that are not connected
+   to each other
+*/
+#define INF 99998765
 
 template<class T>
 void print(T a[], int n) {
@@ -17,8 +25,12 @@ void print(T a[], int n) {
 template<class T>
 void print(T* mat, int row, int col) {
    for (int i = 0; i < row; i++) {
-        for (int j =0; j < col; j++)
-           cout << " " << mat[i][j] << " ";
+        for (int j =0; j < col; j++) {
+           if (mat[i][j] == INF)
+               cout << " INF ";
+            else 
+               cout << " " << mat[i][j] << " ";
+        }
          cout << endl;
    }
 }
